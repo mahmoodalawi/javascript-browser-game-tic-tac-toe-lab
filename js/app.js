@@ -58,21 +58,27 @@ const updateBoard = () => {
   
   const placePiece = (index) => {
     board[index] = turn;
+    // console.log(board); 
   };
   
 
 
   const handleClick = (event) => {
     const squareIndex = event.target.id;
-    // if (board[squareIdx] !== ''){
+     if (board[squareIdx] !== ''){
         
-    //     return;
-    // }
-    // if (winner === true){
-    //     return;
-    // }
-    console.log('Clicked square index:', squareIndex);
+        return;
+     }
+     if (winner === true){
+       return;
+     }
+    // console.log('Clicked square index:', squareIndex);
+    placePiece(squareIndex);
 
+  };
+
+  const checkForWinner = () => {
+    
   };
 
   const render = () => {
