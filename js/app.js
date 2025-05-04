@@ -51,14 +51,24 @@ const updateMessage = () =>{
 
 
 const updateBoard = () => {
-    board.forEach((valueXO, index)) => {
+    board.forEach((valueXO, index) => {
       squareEls[index].textContent = valueXO;
-    };
-  }; 
+    });
+  };
+  
 
 
   const handleClick = (event) => {
-    
+    const squareIndex = event.target.id;
+    // if (board[squareIdx] !== ''){
+        
+    //     return;
+    // }
+    // if (winner === true){
+    //     return;
+    // }
+    console.log('Clicked square index:', squareIndex);
+
   };
 
   const render = () => {
