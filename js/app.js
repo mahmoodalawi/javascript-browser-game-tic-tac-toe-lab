@@ -20,6 +20,14 @@ const messageEl = document.getElementById('message');
 // console.log(messageEl);
 
 /*-------------------------------- Functions --------------------------------*/
+const updateMessage = () =>{
+
+}
+
+
+const updateBoard = () => {
+    
+  };
 
 const init = () => {
     board = ['', '', '', '', '', '', '', '', ''];
