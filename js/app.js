@@ -62,10 +62,21 @@ const updateBoard = () => {
   };
   
 
+  const checkForTie = () => {
+    if(winner === true){
+        return;
+    }
+    if(board.includes('')){
+        tie = false;
+    } else {
+        tie = true;
+    }
+};
+
 
   const handleClick = (event) => {
     const squareIndex = event.target.id;
-     if (board[squareIdx] !== ''){
+     if (board[squareIndex] !== ''){
         
         return;
      }
@@ -74,7 +85,9 @@ const updateBoard = () => {
      }
     // console.log('Clicked square index:', squareIndex);
     placePiece(squareIndex);
-    checkForWinner();
+    checkWinner();
+    render();
+
 
   };
 
