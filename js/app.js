@@ -73,6 +73,21 @@ const updateBoard = () => {
     }
 };
 
+const switchPlayerTurn = () =>{
+    if(winner === true){
+        return
+    } else {
+        if(turn === 'X'){
+            turn = 'O'
+            
+        } else if (turn === 'O'){
+            turn = 'X'
+            
+        }
+    }
+    
+}
+
 
   const handleClick = (event) => {
     const squareIndex = event.target.id;
