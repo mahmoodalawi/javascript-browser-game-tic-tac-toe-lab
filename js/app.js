@@ -71,6 +71,8 @@ const updateBoard = () => {
   init();
 
 /*----------------------------- Event Listeners -----------------------------*/
-
+squareEls.forEach(square => {
+    square.addEventListener('click', handleClick);
+  });
 
 
