@@ -20,18 +20,16 @@ const messageEl = document.getElementById('message');
 // console.log(messageEl);
 
 /*-------------------------------- Functions --------------------------------*/
-function init() {
-    console.log(init);
+
+const init = () => {
     board = ['', '', '', '', '', '', '', '', ''];
     turn = 'X';
     winner = false;
     tie = false;
     render();
-  }
+  };
 
   init();
-
-
 
 /*----------------------------- Event Listeners -----------------------------*/
 
