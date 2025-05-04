@@ -102,6 +102,7 @@ const switchPlayerTurn = () =>{
     placePiece(squareIndex);
     checkWinner();
     checkForTie();
+    switchPlayerTurn();
     render();
 
 
