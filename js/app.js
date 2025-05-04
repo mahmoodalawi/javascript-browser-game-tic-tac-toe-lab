@@ -86,6 +86,7 @@ const updateBoard = () => {
     // console.log('Clicked square index:', squareIndex);
     placePiece(squareIndex);
     checkWinner();
+    checkForTie();
     render();
 
 
