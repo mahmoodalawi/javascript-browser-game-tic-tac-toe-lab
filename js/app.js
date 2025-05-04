@@ -20,14 +20,6 @@ const messageEl = document.getElementById('message');
 // console.log(messageEl);
 
 /*-------------------------------- Functions --------------------------------*/
-const updateMessage = () =>{
-
-}
-
-
-const updateBoard = () => {
-    
-  };
 
 const init = () => {
     board = ['', '', '', '', '', '', '', '', ''];
@@ -36,6 +28,31 @@ const init = () => {
     tie = false;
     render();
   };
+
+
+const updateMessage = () =>{
+    if(winner === false && tie === false){
+        messageEl.textContent = `It is ${turn} turn!`
+    } else if (winner === false && tie === true){
+        messageEl.textContent = 'Its a tie!';
+    } else {
+        messageEl.textContent = `Congratulations ${turn}, You win!`
+    }
+}
+
+
+const updateBoard = () => {
+    board.forEach((valueXO, index)) => {
+      squareEls[index].textContent = valueXO;
+    };
+  }; 
+
+  const render = () => {
+    updateBoard();
+    updateMessage();
+  };
+
+
 
   init();
 
