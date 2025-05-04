@@ -56,6 +56,10 @@ const updateBoard = () => {
     });
   };
   
+  const placePiece = (index) => {
+    board[index] = turn;
+  };
+  
 
 
   const handleClick = (event) => {
