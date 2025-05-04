@@ -56,10 +56,10 @@ const updateBoard = () => {
     };
   }; 
 
- const winningCombos =() =>{
 
-
- }
+  const handleClick = (event) => {
+    
+  };
 
   const render = () => {
     updateBoard();
