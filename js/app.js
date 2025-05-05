@@ -23,10 +23,13 @@ let tie;
 
 const squareEls = document.querySelectorAll('.sqr');
 const messageEl = document.getElementById('message');
+const resetBtnEl = document.getElementById('reset');
+
 
 // To verify that element are recognized 
 // console.log(squareEls);
 // console.log(messageEl);
+// console.log(resetBtnEl);
 
 /*-------------------------------- Functions --------------------------------*/
 
