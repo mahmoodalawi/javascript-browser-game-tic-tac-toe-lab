@@ -153,6 +153,7 @@ squareEls.forEach(square => {
     square.addEventListener('click', handleClick);
   });
 
+  
   resetBtnEl.addEventListener('click', init);
 
 
